@@ -60,7 +60,7 @@ h3, h4, h5, p{
     color: white;
 }
 p{
-    font-size: 20px;
+    font-size: 16px;
     color: black;
 }
 #intro{
@@ -89,15 +89,35 @@ p{
 }
 #footer{
     text-align: center;
-    position: absolute;
+
     color: white;
     left:43%%;
-    bottom: 5px;
 }
 #text{
     padding: 10px;
+    text-align: left;
     background-image:url('../img/bg.png');
     margin-right: 20%;
     margin-left: 20%;
     color: #1e5799;
+}
+
+.code{
+    margin: 20px;
+    padding: 10px;
+     background: rgb(100,104,110); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(100,104,110,1) 0%, rgba(75,77,79,1) 36%, rgba(26,28,30,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(100,104,110,1)), color-stop(36%,rgba(75,77,79,1)), color-stop(100%,rgba(26,28,30,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(100,104,110,1) 0%,rgba(75,77,79,1) 36%,rgba(26,28,30,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(100,104,110,1) 0%,rgba(75,77,79,1) 36%,rgba(26,28,30,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(100,104,110,1) 0%,rgba(75,77,79,1) 36%,rgba(26,28,30,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(100,104,110,1) 0%,rgba(75,77,79,1) 36%,rgba(26,28,30,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64686e', endColorstr='#1a1c1e',GradientType=0 ); /* IE6-9 */
+    background: #404040;
+    color: #f13490;
+    border: 2px solid white;
+}
+#htmlTable{
+    width: 100%;
+    text-align: center;
 }

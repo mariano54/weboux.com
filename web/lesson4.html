@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Weboux: Lesson 4</title>
+    <script src='js/main.js'></script>
+    <link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.css'>
+   <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+
+
+    <link rel='stylesheet' type='text/css' href='css/style2.css'>
+</head>
+<body>
+    <div id='topBar'>
+        <a href="http://www.weboux.com"><img id="logo" src="img/webouxLogo.png" height="55" width="240"></img></a>
+        2013
+        
+        <a href="lessons.html" class="menu"><div class="other">lessons</div></a>
+        <a href="about.html" class="menu"><div class="other">about</div></a>
+        <a href="extras.html" class="menu"><div class="other">extras</div></a>
+    </div>
+    <div id='bottomBar'></div>
+    
+    <div id='title'> 
+        <h1 id="sessonTitle">Lesson 4: More HTML</h1>
+        <h3 id="summary">HyperText Markup Language.</h3>
+    </div>
+    <br/>
+
+
+    <div id="text">
+        <p>In practice, most HTML files have a head and a body. The body contains all the content that we will see in the page, and the head contains other information that is useful to the browser. Here is an example:</p>
+        <div class='code'>
+            &lt;html&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt; My Awesome Website&lt;/title&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel=”stylesheet” href=”css/style.css”/&gt;<br/>    
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="js/website.js"&gt; &lt;/script&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=”http:/google.com”&gt; Click this to go to Google! &lt;/a&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=”http:/google.com”&gt; Click this to go to Google! &lt;/a&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; This is a paragraph. &lt;/p&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; This is a paragraph. &lt;/p&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br/>
+            &lt;/html&gt;
+        </div>
+
+    <p>The title tag is for the name of the page, this will appear on the browser tab. The link tag links the html file with other files, like the css file that we will be creating later. And the script tag is for adding Javascript files, or other languages. Basically the head tag is for linking everything together, and getting all the resources that will allow your page to work. The href or src attributes here specify where to find files. For example the css files are found in the css folder, and the JavaScript files are in the js folder.</p>
+
+    <p>Now we will learn about divs. Divs are a very useful tag in HTML that is present everywhere. They are basically used to divide content on the webpage. For example, YouTube has a div for the advertisement, one for the video, one for comments, etc. And in the one for comments, there is even more divs inside, for each comment. In this way, we can give attributes to each div separately, like give it a bigger margin, move it to the right, change the text color, etc. Usually we give every div an id, like this:</p>
+
+
+        <div class='code'>
+            &lt;div id='topBar'&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="http://www.weboux.com"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img id="logo" src="web/img/webouxLogo.png" height="55" width="240"&gt;&lt;/img&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="web/lessons.html" class="menu"&gt;&lt;div class="other"&gt;lessons&lt;/div&gt;&lt;/a&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="web/about.html" class="menu"&gt;&lt;div class="other"&gt;about&lt;/div&gt;&lt;/a&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="web/extras.html" class="menu"&gt;&lt;div class="other"&gt;extras&lt;/div&gt;&lt;/a&gt;<br/>
+            &lt;/div&gt;<br/>
+        </div>
+        <p>This is a direct excerpt from this website. As you can see, there is a div for the top bar. This div has an id of ‘topBar’. This id is used in the Javascript and CSS to change things about the div. We’ll see this used later.  This div contains the website title and the links on the right. As you can see, there is a link to the main site, and inside it there is an image. Since the image tag is inside the &lt;a&gt; tag, the image will be a clickable link. If you press the logo on the top of the page, it will take you to home.  </p>
+        
+        <p>The &lt;img&gt;  &lt;/img&gt; tag is used for inserting an image onto the page. It has a property called src, which specifies the location of the image. Here we can find the image in the web folder, and in the img folder. Also it has optional width and height attributes to change the size. </p>
+        
+        <p>After this we can see three links, which correspond to lessons, about, and extras, which are links on the top right. Inside each of these  links we create a div, since we will need to change the styles of these links. Each of the divs is given a class of ‘other’. Class is a property similar to ID. However, while a class can be applied to many different elements, an ID is just for one element. So for example all of these divs will have the class ‘other’, and in CSS we will change the style of all ‘other’ divs to be aligned to the left of the page.</p>
+    </div>
+
+
+    <br/><br/><br/>
+    <a href="lesson5.html"><button class='btn'>Next Lesson</button></a>
+    <br/><br/><br/>
+    <div id="footer"> @ Mariano Sorgente 2013</div>
+</body>
+</html>
