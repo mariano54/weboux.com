@@ -4,7 +4,7 @@ function doFirst(){
     canvas.font="12px Tahoma";
  
     var Bits = new Array();
-    for(var n=0; n<110; n++){
+    for(var n=0; n<210; n++){
     	Bits[n]= new Bit();
     }
     var loop = window.setInterval(function(){drawBits(Bits)} ,10);
