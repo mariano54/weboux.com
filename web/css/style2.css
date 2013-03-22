@@ -16,6 +16,9 @@ body{
     text-align: left;
     background: #1e5799; /* Old browsers */
 }
+.menu:visited{
+    color: white;
+}
 .menu:link{
     color:white;
 }
@@ -118,7 +121,8 @@ p{
     border: 2px solid white;
 }
 #htmlTable{
-    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
 }
 

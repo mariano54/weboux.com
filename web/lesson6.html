@@ -31,11 +31,11 @@
 
 
     <div id="text">
-        <p>Make sure you have an HTML file with content from the about page from this website. Now we will try to show how styling is done<p>
+        <p>Make sure you have an HTML file with content from the about page from this website. Now we will try to show how styling is done.<p>
 
         <p>CSS stands for Cascading Style Sheets. It was deliberately designed "to enable separation of document content from document presentation". (Wikipedia). Where HTML would be the content, and CSS would be the presentation. Like HTML, it is not a full programming language, and it is very limited in it's capabilities (although it can make pages look very nice). </p>
 
-        <p>So we will start by changing some of the CSS properties of this file. Open your HTML file and check for a reference to a stylesheet. It should say somewhere, "link rel='stylesheet'. This is where ou define a reference to your stylesheet. Check the href attribute. In this site, it is set to css/style2.css, because we have everything in separate folder. However you can simply write "./style.css", and just create a style.css file in the same directory.</p>
+        <p>So we will start by changing some of the CSS properties of this file. Open your HTML file and check for a reference to a stylesheet. It should say somewhere, "link rel='stylesheet'. This is where you define a reference to your stylesheet. Check the href attribute. In this site, it is set to css/style2.css, because we have everything in separate folder. However you can simply write "./style.css", and just create a style.css file in the same directory.</p>
 
         <p> So now we have a css file that goes along our html file. Let's start changing some properties. In about.html, you can see a div with id of topBar. This is the blue bar that you see at the top of the screen. Let's see how we create this.</p>
 
@@ -57,7 +57,7 @@
                 }<br/>
         </div>
 
-        <p>So here we have set the styles for two elements, by specifying their ID. The element with id of topBar will have the following styles: a height of 70 pixels (as you can see in the blue bar), a margin of 0 px, etc. Margin is the space around your HTML element. Padding is the space inside your HTML element, that pads the inner content. You can set margin or padding to a specifies value, or you can set each specific margin-right, padding-left, etc. Since we have a padding-left of 80, the logo is not quite on the left of the screen.</p>
+        <p>So here we have set the styles for two elements, by specifying their ID. The element with id of topBar will have the following styles: a height of 70 pixels (as you can see in the blue bar), a margin of 0 px, etc. Margin is the space around your HTML element. Padding is the space inside your HTML element, that pads the inner content. You can set margin or padding to a specified value, or you can set each specific margin-right, padding-left, etc. Since we have a padding-left of 80, the logo is not quite on the left of the screen.</p>
 
         <p>Text align is something that determines how the text will be aligned: center, left, or right. Then the background is the specified hexadecimal value of a color, or it can also be an image. As you can see in the code, we specified the margin-top and text-align for the title id, which specifies a div in the HTML document. </p>
 
@@ -73,7 +73,7 @@
             }<br/>
         </div>
 
-        <p>From this code you can see that we specified the style for the elements with class menu. As we can see from the about.html file, the menu class is used in the links at the top right. We use . before the name to denote a class. The ':' (colon) is used to set styling for certain states of the element. For example, the :link style specifies to set all links to the color white. The :hove modifier changes the style to the following, but only when the user's mouse is hovering over the element with class menu. We can also use things like :visited for a link. </p>
+        <p>From this code you can see that we specified the style for the elements with class menu. As we can see from the about.html file, the menu class is used in the links at the top right. We use . before the name to denote a class. The ':' (colon) is used to set styling for certain states of the element. For example, the :link style specifies to set all links to the color white. The :hover modifier changes the style to the following, but only when the user's mouse is hovering over the element with class menu. We can also use things like :visited for a link. </p>
 
         <p>One final thing we need to learn in CSS basics is how to style, for example, all divs, or all h1s, instead of just things with specific ID's. For example, I want all my paragraphs to have a font size of 12, I don't want to have to specify a class for each paragraph that I make.This is done in this very simple way:</p>
 
